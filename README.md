@@ -55,7 +55,7 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `[alt + a][g][i]`                 | `apt-get install`           |
 | `[alt + a][g][r]`                 | `apt-get remove`            |
 | `[alt + a][g][shift + u]`         | `apt-get dist-upgrade`      |
-| `[alt + a][g][u]                  | `apt-get upgrade`           |
+| `[alt + a][g][u]`                 | `apt-get upgrade`           |
 | `[alt + a][g]`                    | `apt-get `                  |
 | `[alt + a]`                       | `apt-`                      |
 | `[alt + g][c]`                    | `grep -c `                  |
@@ -94,7 +94,7 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `[shift + alt + a][g][i]`         | `sudo apt-get install`      |
 | `[shift + alt + a][g][r]`         | `sudo apt-get remove`       |
 | `[shift + alt + a][g][shift + u]` | `sudo apt-get dist-upgrade` |
-| `[shift + alt + a][g][u]          | `sudo apt-get upgrade`      |
+| `[shift + alt + a][g][u]`         | `sudo apt-get upgrade`      |
 | `[shift + alt + a][g]`            | `sudo apt-get `             |
 | `[shift + alt + a]`               | `sudo apt-`                 |
 | `[shift + alt + g][c]`            | `sudo grep -c `             |
