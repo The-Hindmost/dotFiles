@@ -1,0 +1,7 @@
+alias clr='clear'
+alias h='history'
+alias ls='ls --color -h'
+alias la='ls -a'
+alias ll='ls -l'
+alias xx='exit'
+alias y='yes'
