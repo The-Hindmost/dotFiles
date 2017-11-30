@@ -20,4 +20,6 @@ else
 	fi;
 fi;
 
+vim +BundleInstall +qall
+
 unset doIt;
