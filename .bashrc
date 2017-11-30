@@ -11,10 +11,12 @@ PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[0
 TERM=xterm-256color
 export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# Enable sourcing of aliases file {{{1
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
-fi
+# Enable sourcing of external files {{{1
+for file in ~/.{bash_aliases,bash_keybinds}; do
+    if [ -f "$file" ]; then
+        . "$file"
+    fi
+done
 
 # XTerm settings {{{1
 # Set variable identifying the chroot you work in (used in the prompt below) {{{2
