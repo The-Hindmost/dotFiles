@@ -9,6 +9,14 @@ This version is v0.1.DEVELOP
 * i3 WM
 * vim
 
+## Setup
+For setup run the setup script `setup.sh` command lie operations are as follows
+
+| Switch | Options                                    |
+| ------ | ------------------------------------------ |
+| `-d`   | Use the development repo instead of master |
+| `-f`   | Force updating files to the latest version |
+
 ## Bash alias definitions:
 | Alias | Command         |
 | ----- | --------------- |
