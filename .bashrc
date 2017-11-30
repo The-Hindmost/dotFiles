@@ -15,3 +15,8 @@ if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
 fi
+
+# Enable sourcing of aliases file {{{1
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
