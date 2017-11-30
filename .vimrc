@@ -2,6 +2,21 @@
 let g:linuxFont = 'Liberation\ Mono\ 8' "Font config to use on Linux systems
 let g:win32Font = 'Consolas:h9'         "Font config to use on windows systems
 
+" Configure Vundle {{{1
+"Set the runtime path to include Vundle and initialise
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+"Configure list of plugins here {{{2
+"Let Vundle manage Vundle (required)
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'Reewr/vim-monokai-phoenix'
+Plugin 'vim-latex/vim-latex'
+"}}}
+call vundle#end()
+
 " Global Preferences {{{1
 set autoread                            "Automatically read external file changes
 set errorbells                          "Enable bell on errors
