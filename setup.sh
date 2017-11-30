@@ -3,6 +3,7 @@
 cd "$(dirname "${BASH_SOURCE}")";
 
 git pull origin master;
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 function doIt()
 {
@@ -18,5 +19,7 @@ else
 		doIt;
 	fi;
 fi;
+
+vim +BundleInstall +qall
 
 unset doIt;

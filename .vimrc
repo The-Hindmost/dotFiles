@@ -2,6 +2,21 @@
 let g:linuxFont = 'Liberation\ Mono\ 8' "Font config to use on Linux systems
 let g:win32Font = 'Consolas:h9'         "Font config to use on windows systems
 
+" Configure Vundle {{{1
+"Set the runtime path to include Vundle and initialise
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+"Configure list of plugins here {{{2
+"Let Vundle manage Vundle (required)
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'Reewr/vim-monokai-phoenix'
+Plugin 'vim-latex/vim-latex'
+"}}}
+call vundle#end()
+
 " Global Preferences {{{1
 set autoread                            "Automatically read external file changes
 set errorbells                          "Enable bell on errors
@@ -34,6 +49,7 @@ set tabstop=4                           "Use four spaces for tabs
 set expandtab                           "Convert tabs to spaces
 
 " Layout Preferences {{{1
+colorscheme monokai-phoenix
 "Highlight columns 80 and 100 onwards
 let &colorcolumn="80," . join(range(100,999), ",")
 set foldcolumn=1                        "Set the column for fold expansion
@@ -58,22 +74,20 @@ set statusline+=%c)                     "Current column
 set statusline+=\ \                     "Separator
 set statusline+=%P                      "Show the percentage through the file
 
+"Font settings: {{{2
+if has("win32")
+    exec "set guifont=" . g:win32Font
+else
+    exec "set guifont=" . g:linuxFont
+endif
+
 "GUI Specific settings: {{{2
 if has("gui_running")
     "Set height and width (30 rows of text + 2 status by 90 columns):
     set lines=32
     au BufRead * let &numberwidth = float2nr(log10(line("$"))) + 2
               \| let &columns = &numberwidth + 90
-
-    colorscheme monokai-phoenix
-    if has("win32")
-        exec "set guifont=" . g:win32Font
-    else
-        exec "set guifont=" . g:linuxFont
-    endif
-else
-    colorscheme evening
-endif "}}}
+endif
 
 " Search Preferences {{{1
 set hlsearch                            "Highlight search results
