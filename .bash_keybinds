@@ -1,0 +1,149 @@
+# Key Bindings:
+bind '"\eO1;2P":"cat ~/.bash_shortcuts/my_shortcuts | grep "'   # shift + F1
+
+bind '"\eOQ":"vim "'                                            # F2
+bind '"\eOQg":"gvim "'                                          # F2 > g
+bind '"\eO1;2Q":"sudo vim "'                                    # shift + F2
+bind '"\eO1;2Qg":"sudo gvim "'                                  # shift + F2 > g
+
+bind '"\eOR":"find "'                                           # F3
+bind '"\eOR.":find . "'                                         # F3 > .
+bind '"\eO1;2R":"sudo find "'                                   # shift + F3
+bind '"\eO1;2R.":"sudo find . "'                                # shift + F3 > .
+
+bind '"\eOS":"ssh "'                                            # F4
+bind '"\eOSf":"sftp "'                                          # F4 > f
+bind '"\eOSx":"ssh -X "'                                        # F4 > x
+bind '"\eO1;2S":"sudo ssh "'                                    # shift + F4
+bind '"\eO1;2Sf":"sudo sftp "'                                  # shift + F4 > f
+bind '"\eO1;2Sx":"sudo ssh -X "'                                # shift + F4 > x
+
+bind '"\e[15~":"!!\n"'                                          # F5
+bind '"\e[15;2~":"sudo !!\n"'                                   # shift + F5
+
+bind '"\e[17~":"cp -iv "'                                       # F6
+bind '"\e[17~l":"ln -s "'                                       # F6 > l
+bind '"\e[17~r":"cp -irv "'                                     # F6 > r
+bind '"\e[17;2~":"sudo cp -iv "'                                # shift + F6
+bind '"\e[17;2~l":"sudo ln -s "'                                # shift + F6 > l
+bind '"\e[17;2~r":"sudo cp -irv "'                              # shift + F6 > r
+
+bind '"\e[18~":"mv -iv "'                                       # F7
+bind '"\e[18;2~":"sudo mv -iv "'                                # shift + F7
+
+bind '"\e[19~":"rm -iv "'                                       # F8
+bind '"\e[19~d":"rmdir "'                                       # F8 > d
+bind '"\e[19~r":"rm -irv "'                                     # F8 > r
+bind '"\e[19;2~":"sudo rm -iv "'                                # shift + F8
+bind '"\e[19;2~d":"sudo rmdir "'                                # shift + F8 > d
+bind '"\e[19;2~r":"sudo rm -irv "'                              # shift + F8 > r
+
+#bind '"\e[20~":""'                                             # F9
+#bind '"\e[20;2~":"sudo "'                                      # shift + F9
+
+bind '"\e[24~":"sudo "'                                         # F12
+bind '"\e[24;2~":"su\n"'                                        # shift + F12
+bind '"\e[24;2~p":"su -p\n"'                                    # shift + F12 > p
+
+#bind '"\e[1;3A":""'                                            # alt + up arrow
+#bind '"\e[1;4A":"sudo "'                                       # shift + alt + left arrow
+#bind '"\e[1;3B":""'                                            # alt + down arrow
+#bind '"\e[1;4B":"sud                                           # shift + alt + down arrow
+#bind '"\e[1;3D":""'                                            # alt + left arrow
+#bind '"\e[1;4D":"sudo "'                                       # shift + alt + left arrow
+#bind '"\e[1;3C":""'                                            # alt + right arrow
+#bind '"\e[1;4C":"sudo "'                                       # shift + alt + right arrow
+
+#bind '"\eq":""'                                                # alt + q
+#bind '"\eQ":"sudo "'                                           # alt + shift + q
+
+#bind '"\ew":""'                                                # alt + w
+#bind '"\eW":"sudo "'                                           # alt + shift + w
+
+#bind '"\er":""'                                                # alt + r
+#bind '"\eR":"sudo "'                                           # alt + shift + R
+
+#bind '"\ey":""'                                                # alt + y
+#bind '"\eY":"sudo "'                                           # alt + shift + y
+
+bind '"\eu":"cd ../\n"'                                         # alt + u
+bind '"\eU":"sudo cd ../\n"'                                    # alt + shift + u
+
+#bind '"\ei":""'                                                # alt + i
+#bind '"\eI":"sudo "'                                           # alt + shift + i
+
+#bind '"\eo":""'                                                # alt + o
+#bind '"\eO":"sudo "'                                           # alt + shift + o
+
+#bind '"\ep":""'                                                # alt + p
+#bind '"\eP":"sudo "'                                           # alt + shift + p
+
+bind '"\ea":"apt-"'                                             # alt + a
+bind '"\eac":"apt-cache "'                                      # alt + a > c
+bind '"\eacp":"apt-cache policy "'                              # alt + a > c > p
+bind '"\eacs":"apt-cache search "'                              # alt + a > c > s
+bind '"\eag":"apt-get "'                                        # alt + a > g
+bind '"\eagar":"apt-get autoremove"'                            # alt + a > g > a > r
+bind '"\eagi":"apt-get install "'                               # alt + a > g > i
+bind '"\eagr":"apt-get remove "'                                # alt + a > g > r
+bind '"\eagu":"apt-get upgrade"'                                # alt + a > g > u
+bind '"\eag\eu":"apt-get update"'                               # alt + a > g > alt + u
+bind '"\eagU":"apt-get dist-upgrade"'                           # alt + a > g > shift + u
+bind '"\eA":"sudo apt-"'                                        # alt + shift + a
+bind '"\eAc":"sudo apt-cache "'                                 # alt + shift + a > c
+bind '"\eAcp":"sudo apt-cache policy "'                         # alt + shift + a > c > p
+bind '"\eAcs":"sudo apt-cache search "'                         # alt + shift + a > c > s
+bind '"\eAg":"sudo apt-get "'                                   # alt + shift + a > g
+bind '"\eAgar":"sudo apt-get autoremove"'                       # alt + shift + a > g > a > r 
+bind '"\eAgi":apt-get install "'                                # alt + shift + a > g > i
+bind '"\eAgr":apt-get remove "'                                 # alt + shift + a > g > r
+bind '"\eAgu":"sudo apt-get upgrade"'                           # alt + shift + a > g > u
+bind '"\eAg\eu":"sudo apt-get update"'                          # alt + shift + a > g > alt + u
+bind '"\eAgU":"sudo apt-get dist-upgrade"'                      # alt + shift + a > g > shift + u
+
+#bind '"\ed":""'                                                # alt + d
+#bind '"\eD":"sudo "'                                           # alt + shift + d
+
+bind '"\eg":"grep "'                                            # alt + g
+bind '"\egc":"grep -c"'                                         # alt + g > c
+bind '"\egi":"grep -i "'                                        # alt + g > i
+bind '"\egv":"grep -v "'                                        # alt + g > v
+bind '"\eG":"sudo grep "'                                       # alt + shift + g
+bind '"\egc":"sudo grep -c"'                                    # alt + shift + g > c
+bind '"\eGi":"sudo grep -i "'                                   # alt + shift + g > i
+bind '"\eGv":"sudo grep -v "'                                   # alt + shift + g > v
+
+#bind '"\ej":""'                                                # alt + j
+#bind '"\eJ":"sudo "'                                           # alt + shift + j
+
+bind '"\ek":"kill "'                                            # alt + k
+bind '"\ek9":"kill -9 "'                                        # alt + k > 9
+bind '"\eK":"sudo kill "'                                       # alt + shift + k
+bind '"\eK9":"sudo kill -9 "'                                   # alt + shift + k > 9
+
+bind '"\el":"ls "'                                              # alt + l
+bind '"\ela":"ls -a "'                                          # alt + l > a
+bind '"\ell":"ls -l "'                                          # alt + l > l
+bind '"\ellatr":"ls -latr "'                                    # alt + l > l > a > t > r
+bind '"\eL":"sudo ls "'                                         # alt + shift + l
+bind '"\eLa":"sudo ls -a "'                                     # alt + shift + l > a
+bind '"\eLl":"sudo ls -l "'                                     # alt + shift + l > l
+bind '"\eLlatr":"sudo ls -latr "'                               # alt + shift + l > l > a > t > r
+
+#bind '"\ez":""'                                                # alt + z
+#bind '"\eZ":"sudo "'                                           # alt + shift + z
+
+#bind '"\ex":""'                                                # alt + x
+#bind '"\eX":"sudo "'                                           # alt + shift + x
+
+#bind '"\ec":""'                                                # alt + c
+#bind '"\eC":"sudo "'                                           # alt + shift + c
+
+#bind '"\eb":""'                                                # alt + b
+#bind '"\eB":"sudo "'                                           # alt + shift + b
+
+#bind '"\en":""'                                                # alt + n
+#bind '"\eN":"sudo "'                                           # alt + shift + N
+
+bind '"\em":"mkdir -p "'                                        # alt + m
+bind '"\eM":"sudo mkdir -p "'                                   # alt + shift + m
