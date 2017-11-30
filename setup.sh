@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 
 # Process command line options {{{1
-set useDevRepo="0"
-set force="0"
+let useDevRepo="0"
+let force="0"
 while getopts df opt; do
     case $opt in
         d)
-            set useDevRepo="1"
+            let useDevRepo="1"
             ;;
         f)
-            set force="1"
+            let force="1"
             ;;
     esac
 done
