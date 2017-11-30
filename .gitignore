@@ -1,0 +1,6 @@
+# Swap files
+.*.sw*
+
+# Thumbnail cache files
+._*
+Thumbs.db
