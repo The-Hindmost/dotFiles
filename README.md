@@ -10,7 +10,7 @@ This version is v0.1.DEVELOP
 * vim
 
 ## Setup
-For setup run the setup script `setup.sh` command lie operations are as follows
+For setup run the setup script `setup.sh` command line operations are as follows
 
 | Switch | Options                                    |
 | ------ | ------------------------------------------ |
