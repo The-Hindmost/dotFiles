@@ -47,7 +47,7 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `[F8][r]`                         | `rm -irv`                   |
 | `[F8]`                            | `rm -iv `                   |
 | `[F12]`                           | `sudo `                     |
-| `[alt + a][c]                     | `apt-cache `                |
+| `[alt + a][c]`                    | `apt-cache `                |
 | `[alt + a][c][p]`                 | `apt-cache policy `         |
 | `[alt + a][c][s]`                 | `apt-cache search `         |
 | `[alt + a][g][a][r]`              | `apt-get autoremove`        |
@@ -69,7 +69,7 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `[alt + l][l]`                    | `ls -l `                    |
 | `[alt + l]`                       | `ls `                       |
 | `[alt + m]`                       | `mkdir -p`                  |
-| `[alt + u]                        | `cd ../`                    |
+| `[alt + u]`                       | `cd ../`                    |
 | `[shift + F2][g]`                 | `sudo gvim`                 |
 | `[shift + F2]`                    | `sudo vim `                 |
 | `[shift + F3][.]`                 | `sudo find . `              |
@@ -86,7 +86,7 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `[shift + F8][r]`                 | `sudo rm -irv`              |
 | `[shift + F8]`                    | `sudo rm -iv `              |
 | `[shift + F12]`                   | `su`                        |
-| `[shift + alt + a][c]             | `sudo apt-cache `           |
+| `[shift + alt + a][c]`            | `sudo apt-cache `           |
 | `[shift + alt + a][c][p]`         | `sudo apt-cache policy `    |
 | `[shift + alt + a][c][s]`         | `sudo apt-cache search `    |
 | `[shift + alt + a][g][a][r]`      | `sudo apt-get autoremove`   |
