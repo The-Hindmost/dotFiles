@@ -4,7 +4,7 @@
 let useDevRepo="0"
 let force="0"
 let updateOnly="0"
-while getopts df opt; do
+while getopts dfu opt; do
     case $opt in
         d)
             let useDevRepo="1"
