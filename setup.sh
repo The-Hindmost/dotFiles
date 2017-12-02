@@ -3,6 +3,7 @@
 # Process command line options {{{1
 let useDevRepo="0"
 let force="0"
+let updateOnly="0"
 while getopts df opt; do
     case $opt in
         d)
@@ -10,6 +11,9 @@ while getopts df opt; do
             ;;
         f)
             let force="1"
+            ;;
+        u)
+            let updateOnly="1"
             ;;
     esac
 done
@@ -25,7 +29,9 @@ else
 fi;
 #}}}
 
-git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+if [ "$updateOnly" == "0" ]; then
+    git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+fi;
 
 function doIt()
 {

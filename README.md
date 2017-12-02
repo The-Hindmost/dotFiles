@@ -12,10 +12,11 @@ This version is v1.0.DEVELOPMENT
 ## Setup
 For setup run the setup script `setup.sh` command line operations are as follows
 
-| Switch | Options                                    |
-| ------ | ------------------------------------------ |
-| `-d`   | Use the development repo instead of master |
-| `-f`   | Force updating files to the latest version |
+| Switch | Options                                          |
+| ------ | ------------------------------------------------ |
+| `-d`   | Use the development repo instead of master       |
+| `-f`   | Force updating files to the latest version       |
+| `-u`   | Only perform an update instead of a full install |
 
 ## Bash alias definitions:
 | Alias | Command         |
