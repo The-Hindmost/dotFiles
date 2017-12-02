@@ -65,9 +65,9 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `[alt + g]`                       | `grep `                     |
 | `[alt + k][s]`                    | `kill -9 `                  |
 | `[alt + k]`                       | `kill `                     |
-| `[alt + l][a]`                    | `ls -a `                    |
+| `[alt + l][a]`                    | `la `                       |
 | `[alt + l][l][a][t][r]`           | `ls -latr`                  |
-| `[alt + l][l]`                    | `ls -l `                    |
+| `[alt + l][l]`                    | `ll `                       |
 | `[alt + l]`                       | `ls `                       |
 | `[alt + m]`                       | `mkdir -p`                  |
 | `[alt + u]`                       | `cd ../`                    |

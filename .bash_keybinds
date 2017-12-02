@@ -122,8 +122,8 @@ bind '"\eK":"sudo kill "'                                       # alt + shift + 
 bind '"\eK9":"sudo kill -9 "'                                   # alt + shift + k > 9
 
 bind '"\el":"ls "'                                              # alt + l
-bind '"\ela":"ls -a "'                                          # alt + l > a
-bind '"\ell":"ls -l "'                                          # alt + l > l
+bind '"\ela":"la "'                                             # alt + l > a
+bind '"\ell":"ll "'                                             # alt + l > l
 bind '"\ellatr":"ls -latr "'                                    # alt + l > l > a > t > r
 bind '"\eL":"sudo ls "'                                         # alt + shift + l
 bind '"\eLa":"sudo ls -a "'                                     # alt + shift + l > a
