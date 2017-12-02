@@ -19,15 +19,15 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `-u`   | Only perform an update instead of a full install |
 
 ## Bash alias definitions:
-| Alias | Command         |
-| ----- | --------------- |
-| `clr` | `clear`         |
-| `h`   | `history`       |
-| `ls`  | `ls --color -h` |
-| `la`  | `ls -a`         |
-| `ll`  | `ls -l`         |
-| `xx`  | `exit`          |
-| `y`   | `yes`           |
+| Alias | Command          |
+| ----- | ---------------- |
+| `clr` | `clear`          |
+| `h`   | `history`        |
+| `la`  | `ls --color -ah` |
+| `ll`  | `ls --color -hl` |
+| `ls`  | `ls --color -h`  |
+| `xx`  | `exit`           |
+| `y`   | `yes`            |
 
 ## Bash key-binding definitions:
 | Key-binding                       | Command                     |
