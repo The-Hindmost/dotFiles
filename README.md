@@ -1,7 +1,7 @@
 # dotFiles
 A collection of various configuration files that I tend to use for my environment.
 
-This version is v1.0.1
+This version is v1.0.2
 
 ## Currently supported files:
 * bash
