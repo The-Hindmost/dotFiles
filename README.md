@@ -109,4 +109,4 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `[shift + alt + l][l]`            | `sudo ls -l `               |
 | `[shift + alt + l]`               | `sudo ls `                  |
 | `[shift + alt + m]`               | `sudo mkdir -p`             |
-| `[shift + alt + u]                | `sudo cd ../`               |
+| `[shift + alt + u]`               | `sudo cd ../`               |
