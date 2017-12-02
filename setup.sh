@@ -30,6 +30,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 function doIt()
 {
 	rsync --exclude-from "exclude_me.txt" -avh --no-perms . ~;
+    vim +BundleInstall +qall
 }
 
 # Sync the repo files {{{1
@@ -43,7 +44,4 @@ else
 	fi;
 fi;
 #}}}
-
-vim +BundleInstall +qall
-
 unset doIt;
