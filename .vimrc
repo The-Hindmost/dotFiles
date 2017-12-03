@@ -11,8 +11,9 @@ call vundle#begin()
 "Let Vundle manage Vundle (required)
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'Reewr/vim-monokai-phoenix'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'scrooloose/nerdtree'
 Plugin 'vim-latex/vim-latex'
 "}}}
 call vundle#end()

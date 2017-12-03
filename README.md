@@ -19,20 +19,22 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `-u`   | Only perform an update instead of a full install |
 
 ## Bash alias definitions:
-| Alias | Command          |
-| ----- | ---------------- |
-| `clr` | `clear`          |
-| `h`   | `history`        |
-| `la`  | `ls --color -ah` |
-| `ll`  | `ls --color -hl` |
-| `ls`  | `ls --color -h`  |
-| `xx`  | `exit`           |
-| `y`   | `yes`            |
+| Alias  | Command          |
+| ------ | ---------------- |
+| `clr`  | `clear`          |
+| `h`    | `history`        |
+| `la`   | `ls --color -ah` |
+| `ll`   | `ls --color -hl` |
+| `ls`   | `ls --color -h`  |
+| `vimn` | `vim +NERDTree`  |
+| `xx`   | `exit`           |
+| `y`    | `yes`            |
 
 ## Bash key-binding definitions:
 | Key-binding                       | Command                     |
 | --------------------------------- | --------------------------- |
 | `[F2][g]`                         | `gvim`                      |
+| `[F2][n]`                         | `vimn`                      |
 | `[F2]`                            | `vim `                      |
 | `[F3][.]`                         | `find . `                   |
 | `[F3]`                            | `find `                     |

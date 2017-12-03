@@ -2,6 +2,7 @@
 bind '"\eO1;2P":"cat ~/.bash_shortcuts/my_shortcuts | grep "'   # shift + F1
 
 bind '"\eOQ":"vim "'                                            # F2
+bind '"\eOQn":"vimn "'                                          # F2 > n
 bind '"\eOQg":"gvim "'                                          # F2 > g
 bind '"\eO1;2Q":"sudo vim "'                                    # shift + F2
 bind '"\eO1;2Qg":"sudo gvim "'                                  # shift + F2 > g
