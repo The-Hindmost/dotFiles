@@ -1,7 +1,7 @@
 # dotFiles
 A collection of various configuration files that I tend to use for my environment.
 
-This version is v1.0.2
+This version is v2017.12
 
 ## Currently supported files:
 * bash
@@ -12,26 +12,29 @@ This version is v1.0.2
 ## Setup
 For setup run the setup script `setup.sh` command line operations are as follows
 
-| Switch | Options                                    |
-| ------ | ------------------------------------------ |
-| `-d`   | Use the development repo instead of master |
-| `-f`   | Force updating files to the latest version |
+| Switch | Options                                          |
+| ------ | ------------------------------------------------ |
+| `-d`   | Use the development repo instead of master       |
+| `-f`   | Force updating files to the latest version       |
+| `-u`   | Only perform an update instead of a full install |
 
 ## Bash alias definitions:
-| Alias | Command         |
-| ----- | --------------- |
-| `clr` | `clear`         |
-| `h`   | `history`       |
-| `ls`  | `ls --color -h` |
-| `la`  | `ls -a`         |
-| `ll`  | `ls -l`         |
-| `xx`  | `exit`          |
-| `y`   | `yes`           |
+| Alias  | Command          |
+| ------ | ---------------- |
+| `clr`  | `clear`          |
+| `h`    | `history`        |
+| `la`   | `ls --color -ah` |
+| `ll`   | `ls --color -hl` |
+| `ls`   | `ls --color -h`  |
+| `vimn` | `vim +NERDTree`  |
+| `xx`   | `exit`           |
+| `y`    | `yes`            |
 
 ## Bash key-binding definitions:
 | Key-binding                       | Command                     |
 | --------------------------------- | --------------------------- |
 | `[F2][g]`                         | `gvim`                      |
+| `[F2][n]`                         | `vimn`                      |
 | `[F2]`                            | `vim `                      |
 | `[F3][.]`                         | `find . `                   |
 | `[F3]`                            | `find `                     |
@@ -46,6 +49,7 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `[F8][d]`                         | `rmdir `                    |
 | `[F8][r]`                         | `rm -irv`                   |
 | `[F8]`                            | `rm -iv `                   |
+| `[F9]`                            | `tmux`                      |
 | `[F12]`                           | `sudo `                     |
 | `[alt + a][c]`                    | `apt-cache `                |
 | `[alt + a][c][p]`                 | `apt-cache policy `         |
@@ -64,9 +68,9 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `[alt + g]`                       | `grep `                     |
 | `[alt + k][s]`                    | `kill -9 `                  |
 | `[alt + k]`                       | `kill `                     |
-| `[alt + l][a]`                    | `ls -a `                    |
+| `[alt + l][a]`                    | `la `                       |
 | `[alt + l][l][a][t][r]`           | `ls -latr`                  |
-| `[alt + l][l]`                    | `ls -l `                    |
+| `[alt + l][l]`                    | `ll `                       |
 | `[alt + l]`                       | `ls `                       |
 | `[alt + m]`                       | `mkdir -p`                  |
 | `[alt + u]`                       | `cd ../`                    |
@@ -85,6 +89,7 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `[shift + F8][d]`                 | `sudo rmdir `               |
 | `[shift + F8][r]`                 | `sudo rm -irv`              |
 | `[shift + F8]`                    | `sudo rm -iv `              |
+| `[shift + F9]`                    | `sudo tmux`                 |
 | `[shift + F12]`                   | `su`                        |
 | `[shift + alt + a][c]`            | `sudo apt-cache `           |
 | `[shift + alt + a][c][p]`         | `sudo apt-cache policy `    |
@@ -108,4 +113,15 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `[shift + alt + l][l]`            | `sudo ls -l `               |
 | `[shift + alt + l]`               | `sudo ls `                  |
 | `[shift + alt + m]`               | `sudo mkdir -p`             |
-| `[shift + alt + u]                | `sudo cd ../`               |
+| `[shift + alt + u]`               | `sudo cd ../`               |
+
+## Vim
+### Plugins
+The following plugins for vim are installed and maintained by Vundle:
+* [Better Rainbow Parentheses](https://github.com/kien/rainbow_parentheses.vim)
+* [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
+* [NERDTree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
+* [NERDTree](https://github.com/scrooloose/nerdtree)
+* [Vundle](https://github.com/VundleVim/Vundle.vim)
+* [vim-latex](https://github.com/vim-latex/vim-latex)
+* [vim-monokai-phoenix](https://github.com/Reewr/vim-monokai-phoenix) theme

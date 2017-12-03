@@ -2,6 +2,7 @@
 bind '"\eO1;2P":"cat ~/.bash_shortcuts/my_shortcuts | grep "'   # shift + F1
 
 bind '"\eOQ":"vim "'                                            # F2
+bind '"\eOQn":"vimn "'                                          # F2 > n
 bind '"\eOQg":"gvim "'                                          # F2 > g
 bind '"\eO1;2Q":"sudo vim "'                                    # shift + F2
 bind '"\eO1;2Qg":"sudo gvim "'                                  # shift + F2 > g
@@ -38,8 +39,8 @@ bind '"\e[19;2~":"sudo rm -iv "'                                # shift + F8
 bind '"\e[19;2~d":"sudo rmdir "'                                # shift + F8 > d
 bind '"\e[19;2~r":"sudo rm -irv "'                              # shift + F8 > r
 
-#bind '"\e[20~":""'                                             # F9
-#bind '"\e[20;2~":"sudo "'                                      # shift + F9
+bind '"\e[20~":"tmux\n"'                                        # F9
+bind '"\e[20;2~":"sudo tmux\n"'                                 # shift + F9
 
 bind '"\e[24~":"sudo "'                                         # F12
 bind '"\e[24;2~":"su\n"'                                        # shift + F12
@@ -122,8 +123,8 @@ bind '"\eK":"sudo kill "'                                       # alt + shift + 
 bind '"\eK9":"sudo kill -9 "'                                   # alt + shift + k > 9
 
 bind '"\el":"ls "'                                              # alt + l
-bind '"\ela":"ls -a "'                                          # alt + l > a
-bind '"\ell":"ls -l "'                                          # alt + l > l
+bind '"\ela":"la "'                                             # alt + l > a
+bind '"\ell":"ll "'                                             # alt + l > l
 bind '"\ellatr":"ls -latr "'                                    # alt + l > l > a > t > r
 bind '"\eL":"sudo ls "'                                         # alt + shift + l
 bind '"\eLa":"sudo ls -a "'                                     # alt + shift + l > a

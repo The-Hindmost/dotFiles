@@ -11,8 +11,11 @@ call vundle#begin()
 "Let Vundle manage Vundle (required)
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'Reewr/vim-monokai-phoenix'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
 Plugin 'vim-latex/vim-latex'
 "}}}
 call vundle#end()
@@ -29,6 +32,22 @@ set ttyfast                             "Increase the speed of drawing the tty
 set visualbell                          "Flash screen instead of beeping
 set wildmenu                            "Enable command completion
 set wildmode=longest:full,full          "Set parameters for wildmenu
+
+" Plugin Preferences {{{1
+" Nerd Commenter {{{2
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
+" }}}
 
 " Editing Preferences {{{1
 au FocusLost * silent! wa               "Save named writable files on lost focus
