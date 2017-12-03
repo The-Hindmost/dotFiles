@@ -39,8 +39,8 @@ bind '"\e[19;2~":"sudo rm -iv "'                                # shift + F8
 bind '"\e[19;2~d":"sudo rmdir "'                                # shift + F8 > d
 bind '"\e[19;2~r":"sudo rm -irv "'                              # shift + F8 > r
 
-#bind '"\e[20~":""'                                             # F9
-#bind '"\e[20;2~":"sudo "'                                      # shift + F9
+bind '"\e[20~":"tmux\n"'                                        # F9
+bind '"\e[20;2~":"sudo tmux\n"'                                 # shift + F9
 
 bind '"\e[24~":"sudo "'                                         # F12
 bind '"\e[24;2~":"su\n"'                                        # shift + F12
