@@ -49,6 +49,7 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `[F8][d]`                         | `rmdir `                    |
 | `[F8][r]`                         | `rm -irv`                   |
 | `[F8]`                            | `rm -iv `                   |
+| `[F9]`                            | `tmux`                      |
 | `[F12]`                           | `sudo `                     |
 | `[alt + a][c]`                    | `apt-cache `                |
 | `[alt + a][c][p]`                 | `apt-cache policy `         |
@@ -88,6 +89,7 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `[shift + F8][d]`                 | `sudo rmdir `               |
 | `[shift + F8][r]`                 | `sudo rm -irv`              |
 | `[shift + F8]`                    | `sudo rm -iv `              |
+| `[shift + F9]`                    | `sudo tmux`                 |
 | `[shift + F12]`                   | `su`                        |
 | `[shift + alt + a][c]`            | `sudo apt-cache `           |
 | `[shift + alt + a][c][p]`         | `sudo apt-cache policy `    |
