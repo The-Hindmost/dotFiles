@@ -116,10 +116,11 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `[shift + alt + u]`               | `sudo cd ../`               |
 
 ## Vim
-## Plugins
+### Plugins
 The following plugins for vim are installed and maintained by Vundle:
-* [Vundle](https://github.com/VundleVim/Vundle.vim)
 * [Better Rainbow Parentheses](https://github.com/kien/rainbow_parentheses.vim)
-* [vim-monokai-phoenix](https://github.com/Reewr/vim-monokai-phoenix) theme
+* [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
 * [NERDTree](https://github.com/scrooloose/nerdtree)
+* [Vundle](https://github.com/VundleVim/Vundle.vim)
 * [vim-latex](https://github.com/vim-latex/vim-latex)
+* [vim-monokai-phoenix](https://github.com/Reewr/vim-monokai-phoenix) theme
