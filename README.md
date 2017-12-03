@@ -120,6 +120,7 @@ For setup run the setup script `setup.sh` command line operations are as follows
 The following plugins for vim are installed and maintained by Vundle:
 * [Better Rainbow Parentheses](https://github.com/kien/rainbow_parentheses.vim)
 * [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
+* [NERDTree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
 * [NERDTree](https://github.com/scrooloose/nerdtree)
 * [Vundle](https://github.com/VundleVim/Vundle.vim)
 * [vim-latex](https://github.com/vim-latex/vim-latex)
