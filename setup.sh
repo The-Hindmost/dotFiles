@@ -8,6 +8,8 @@ function doIt() #{{{2
 
 	rsync --exclude-from "exclude_me.txt" -avh --no-perms . ~;
     vim +BundleInstall +qall
+
+    source .bashrc
 }
 
 # Main {{{1
