@@ -34,6 +34,7 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | Key-binding                       | Command                     |
 | --------------------------------- | --------------------------- |
 | `[F2][g]`                         | `gvim`                      |
+| `[F2][n]`                         | `vimn`                      |
 | `[F2]`                            | `vim `                      |
 | `[F3][.]`                         | `find . `                   |
 | `[F3]`                            | `find `                     |
