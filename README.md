@@ -123,5 +123,6 @@ The following plugins for vim are installed and maintained by Vundle:
 * [NERDTree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
 * [NERDTree](https://github.com/scrooloose/nerdtree)
 * [Vundle](https://github.com/VundleVim/Vundle.vim)
+* [perldoc.vim](https://github.com/hotchpotch/perldoc-vim)
 * [vim-latex](https://github.com/vim-latex/vim-latex)
 * [vim-monokai-phoenix](https://github.com/Reewr/vim-monokai-phoenix) theme
