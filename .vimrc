@@ -119,6 +119,12 @@ set smartcase                           "Make case sensitive searches smart
 nnoremap / /\v
 vnoremap / /\v
 
+" Autocmd Preferences {{{1
+" Perl filetype settings {{{2
+autocmd FileType perl compiler perl
+autocmd FileType perl set errorformat=%f:%l:%m
+autocmd FileType perl set autowrite
+
 " Commands {{{1
 "Stop highlighting duplicate lines:
 command! HideDupes
