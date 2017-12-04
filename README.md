@@ -12,6 +12,7 @@ This version is v2018.1.DEVELOPMENT
 ## Setup
 For setup run the setup script `setup.sh` 
 Command line operations are as follows
+
 | Switch | Options                                          |
 | ------ | ------------------------------------------------ |
 | `-d`   | Use the development repo instead of master       |
