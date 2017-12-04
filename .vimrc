@@ -119,7 +119,11 @@ set smartcase                           "Make case sensitive searches smart
 nnoremap / /\v
 vnoremap / /\v
 
+A
 " Autocmd Preferences {{{1
+" Nerdtree settings {{{2
+autocmd bufenter * if (winnr(“$”) == 1 && exists(“b:NERDTreeType”) && b:NERDTreeType == “primary”) | q | endif
+
 " Perl filetype settings {{{2
 autocmd FileType perl compiler perl
 autocmd FileType perl set errorformat=%f:%l:%m
