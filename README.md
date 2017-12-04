@@ -18,7 +18,8 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `-f`   | Force updating files to the latest version       |
 | `-u`   | Only perform an update instead of a full install |
 
-## Bash alias definitions:
+## Bash
+### Alias definitions:
 | Alias  | Command          |
 | ------ | ---------------- |
 | `clr`  | `clear`          |
@@ -30,7 +31,7 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `xx`   | `exit`           |
 | `y`    | `yes`            |
 
-## Bash key-binding definitions:
+### Key-binding definitions:
 | Key-binding                       | Command                     |
 | --------------------------------- | --------------------------- |
 | `[F2][g]`                         | `gvim`                      |
