@@ -3,15 +3,15 @@ A collection of various configuration files that I tend to use for my environmen
 
 This version is v2018.1.DEVELOPMENT
 
-## Currently supported files:
+## Currently supported files
 * bash
 * git
 * i3 WM
 * vim
 
 ## Setup
-For setup run the setup script `setup.sh` command line operations are as follows
-
+For setup run the setup script `setup.sh` 
+Command line operations are as follows
 | Switch | Options                                          |
 | ------ | ------------------------------------------------ |
 | `-d`   | Use the development repo instead of master       |
@@ -19,7 +19,7 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `-u`   | Only perform an update instead of a full install |
 
 ## Bash
-### Alias definitions:
+### Alias definitions
 | Alias  | Command          |
 | ------ | ---------------- |
 | `clr`  | `clear`          |
@@ -31,7 +31,7 @@ For setup run the setup script `setup.sh` command line operations are as follows
 | `xx`   | `exit`           |
 | `y`    | `yes`            |
 
-### Key-binding definitions:
+### Key-binding definitions
 | Key-binding                       | Command                     |
 | --------------------------------- | --------------------------- |
 | `[F2][g]`                         | `gvim`                      |
