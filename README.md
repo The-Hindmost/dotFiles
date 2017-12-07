@@ -120,6 +120,7 @@ Command line operations are as follows
 
 ## Perltidy
 The following switches are enabled for perltidy:
+
 | Switch                                                                 | Explanation                                                         |
 | ---------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | `-bl`                                                                  | Opening braces left (Allman style)                                  |
