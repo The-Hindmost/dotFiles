@@ -137,6 +137,17 @@ The following switches are enabled for perltidy:
 | `-syn`                                                                 | Perform syntax checking when running                                |
 
 ## Vim
+### Autocmds
+The following autocmds are set for the various filetypes / options
+
+#### NERDTree
+* vim will automatically exit if NERDTree is the only open buffer.
+
+#### Perl files
+* The compiler will automatically be set to perl for use with `:make`
+* The error format will be set to `%f:%l:%m`
+* The file in the active buffer will be automatically saved upon invocation of `:make`
+
 ### Plugins
 The following plugins for vim are installed and maintained by Vundle:
 * [Better Rainbow Parentheses](https://github.com/kien/rainbow_parentheses.vim)
