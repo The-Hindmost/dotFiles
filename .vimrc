@@ -121,7 +121,7 @@ vnoremap / /\v
 
 " Autocmd Preferences {{{1
 " Nerdtree settings {{{2
-autocmd bufenter * if (winnr(“$”) == 1 && exists(“b:NERDTreeType”) && b:NERDTreeType == “primary”) | q | endif
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " Perl filetype settings {{{2
 autocmd FileType perl compiler perl
