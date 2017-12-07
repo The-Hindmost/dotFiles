@@ -1,0 +1,12 @@
+-bl                                                                     # Opening braces left
+-bt=2                                                                   # Curly brace tightness = 2
+-cti=1                                                                  # Align closing parns. with opening parens.
+-it=2                                                                   # Iterate twice over the file when tidying
+-lp                                                                     # Align non-block closing parens. with opening parens.
+-nsak="if else elsif unless while for return switch case given when"    # Remove spaces between these tokens and the opening paren.
+-nsfs                                                                   # No spaces after for-loop semicolons
+-olc                                                                    # Indent block comments unless they exceed the maximum line length
+-pt=2                                                                   # Paren. tightness = 2
+-sbt=2                                                                  # Square bracket tightness = 2
+-st                                                                     # Output to stdout
+-syn                                                                    # Perform syntax checking when running
