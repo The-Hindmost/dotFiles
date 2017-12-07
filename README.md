@@ -148,6 +148,15 @@ The following autocmds are set for the various filetypes / options
 * The error format will be set to `%f:%l:%m`
 * The file in the active buffer will be automatically saved upon invocation of `:make`
 
+### Commands
+The following commands have been added to vim:
+
+| Command     | Purpose                                                |
+| ----------- | ------------------------------------------------------ |
+| `HideDupes` | Stop highlighting duplicate lines in the active buffer |
+| `ShowSupes` | Highlight duplicate lines in the active buffer         |
+| `WordCount` | Count the amount of words in the active buffer         |
+
 ### Plugins
 The following plugins for vim are installed and maintained by Vundle:
 * [Better Rainbow Parentheses](https://github.com/kien/rainbow_parentheses.vim)
