@@ -49,6 +49,9 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 " }}}
+" Nerd Tree {{{2
+let g:NERDTreeShowHidden = 1
+" }}}
 
 " Editing Preferences {{{1
 au FocusLost * silent! wa               "Save named writable files on lost focus
