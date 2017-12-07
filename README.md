@@ -131,7 +131,7 @@ The following switches are enabled for perltidy:
 | `-nsak="if else elsif unless while for return switch case given when"` | Remove spaces between the listed tokens and the opening parenthesis |
 | `-nsfs`                                                                | No spaces after for-loop semicolons                                 |
 | `-olc`                                                                 | Indent block comments unless they exceed the maximum line length    |
-| `-pt=2`                                                                | Parenthsis tightness = 2                                            |
+| `-pt=2`                                                                | Parenthesis tightness = 2                                           |
 | `-sbt=2`                                                               | Square bracket tightness = 2                                        |
 | `-st`                                                                  | Output to stdout                                                    |
 | `-syn`                                                                 | Perform syntax checking when running                                |
