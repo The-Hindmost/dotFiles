@@ -7,6 +7,7 @@ This version is v2018.1.DEVELOPMENT
 * bash
 * git
 * i3 WM
+* perltidy
 * vim
 
 ## Setup
@@ -116,6 +117,23 @@ Command line operations are as follows
 | `[shift + alt + l]`               | `sudo ls `                  |
 | `[shift + alt + m]`               | `sudo mkdir -p`             |
 | `[shift + alt + u]`               | `sudo cd ../`               |
+
+## Perltidy
+The following switches are enabled for perltidy:
+| Switch                                                                 | Explanation                                                         |
+| ---------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| `-bl`                                                                  | Opening braces left (Allman style)                                  |
+| `-bt=2`                                                                | Curly brace tightness = 2                                           |
+| `-cti=1`                                                               | Align closing parentheses with their opening counterpart            |
+| `-it=2`                                                                | Iterate twice over the file when tidying                            |
+| `-lp`                                                                  | Align non-block closing parentheses with their opening counterpart  |
+| `-nsak="if else elsif unless while for return switch case given when"` | Remove spaces between the listed tokens and the opening parenthesis |
+| `-nsfs`                                                                | No spaces after for-loop semicolons                                 |
+| `-olc`                                                                 | Indent block comments unless they exceed the maximum line length    |
+| `-pt=2`                                                                | Parenthsis tightness = 2                                            |
+| `-sbt=2`                                                               | Square bracket tightness = 2                                        |
+| `-st`                                                                  | Output to stdout                                                    |
+| `-syn`                                                                 | Perform syntax checking when running                                |
 
 ## Vim
 ### Plugins
