@@ -140,10 +140,10 @@ The following switches are enabled for perltidy:
 ## Tmux
 The following settings are enabled for tmux:
 
-| Setting                    | Explanation                     |
-| -------------------------- | ------------------------------- |
-| set -g history-limit 10000 | Set scrollback history to 10000 |
-| set -g mouse on            | Enable mouse support            |
+| Setting                      | Explanation                     |
+| ---------------------------- | ------------------------------- |
+| `set -g history-limit 10000` | Set scrollback history to 10000 |
+| `set -g mouse on`            | Enable mouse support            |
 
 ## Vim
 ### Autocmds
