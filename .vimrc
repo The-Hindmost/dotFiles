@@ -131,6 +131,8 @@ autocmd FileType perl compiler perl
 autocmd FileType perl set errorformat=%f:%l:%m
 autocmd FileType perl set autowrite
 
+" Key remaps
+nnoremap <leader>m :make<cr>
 " Commands {{{1
 "Stop highlighting duplicate lines:
 command! HideDupes
