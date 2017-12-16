@@ -157,6 +157,15 @@ The following autocmds are set for the various filetypes / options
 * The error format will be set to `%f:%l:%m`
 * The file in the active buffer will be automatically saved upon invocation of `:make`
 
+### Keybindings
+The following key sequences have been mapped
+
+#### Normal Mode
+
+| Key-Binding | Command |
+| ----------- | ------- |
+| `<leader>m` | `:make` |
+
 ### Commands
 The following commands have been added to vim:
 
