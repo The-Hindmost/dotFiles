@@ -57,6 +57,7 @@ let g:Tex_DefaultTargetFormat = 'pdf'
 " }}}
 
 " Editing Preferences {{{1
+au BufLeave * silent! wa                "Save named writable files on leaving a buffer
 au FocusLost * silent! wa               "Save named writable files on lost focus
 set backspace=indent,eol,start          "Fixes backspacing in Vim on Windows 7
 set completeopt=menu,menuone,preview    "Set completion options
