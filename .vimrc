@@ -52,6 +52,9 @@ let g:NERDTreeIndicatorMapCustom = {
 " Nerd Tree {{{2
 let g:NERDTreeShowHidden = 1
 " }}}
+" vim-latex {{{2
+let g:Tex_DefaultTargetFormat = 'pdf'
+" }}}
 
 " Editing Preferences {{{1
 au FocusLost * silent! wa               "Save named writable files on lost focus
