@@ -127,6 +127,9 @@ nnoremap / /\v
 vnoremap / /\v
 
 " Autocmd Preferences {{{1
+autocmd BufWinEnter * silent loadview
+autocmd BufWinLeave * mkview
+
 " Nerdtree settings {{{2
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
@@ -135,8 +138,9 @@ autocmd FileType perl compiler perl
 autocmd FileType perl set errorformat=%f:%l:%m
 autocmd FileType perl set autowrite
 
-" Key remaps
+" Key remaps {{{1
 nnoremap <leader>m :make<cr>
+
 " Commands {{{1
 "Stop highlighting duplicate lines:
 command! HideDupes
