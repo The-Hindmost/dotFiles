@@ -172,7 +172,7 @@ The following commands have been added to vim:
 | Command     | Purpose                                                |
 | ----------- | ------------------------------------------------------ |
 | `HideDupes` | Stop highlighting duplicate lines in the active buffer |
-| `ShowSupes` | Highlight duplicate lines in the active buffer         |
+| `ShowDupes` | Highlight duplicate lines in the active buffer         |
 | `WordCount` | Count the amount of words in the active buffer         |
 
 ### Plugins
