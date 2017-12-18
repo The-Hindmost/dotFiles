@@ -49,6 +49,14 @@ let g:NERDTreeIndicatorMapCustom = {
     \ }
 " }}}
 
+" Rainbow Parentheses {{{2
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadBraces
+au Syntax * RainbowParenthesesLoadChevrons
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+" }}}
+
 " Editing Preferences {{{1
 au FocusLost * silent! wa               "Save named writable files on lost focus
 set backspace=indent,eol,start          "Fixes backspacing in Vim on Windows 7
