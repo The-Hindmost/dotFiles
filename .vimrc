@@ -56,6 +56,14 @@ let g:NERDTreeShowHidden = 1
 let g:Tex_DefaultTargetFormat = 'pdf'
 " }}}
 
+" Rainbow Parentheses {{{2
+au VimEnter * RainbowParenthesesToggle
+au Syntax * RainbowParenthesesLoadBraces
+au Syntax * RainbowParenthesesLoadChevrons
+au Syntax * RainbowParenthesesLoadRound
+au Syntax * RainbowParenthesesLoadSquare
+" }}}
+
 " Editing Preferences {{{1
 au BufLeave * silent! wa                "Save named writable files on leaving a buffer
 au FocusLost * silent! wa               "Save named writable files on lost focus
