@@ -142,18 +142,20 @@ autocmd FileType perl set autowrite
 nnoremap <leader>m :make<cr>
 
 " Commands {{{1
-"Stop highlighting duplicate lines:
+"Stop highlighting duplicate lines {{{2
 command! HideDupes
     \ noh |
     \ syntax off |
     \ syntax on
-"Highlight duplicate lines:
+
+"Highlight duplicate lines {{{2
 command! ShowDupes
     \ noh |
     \ syn clear Repeat |
     \ g/^\(.*\)\n\ze\%(.*\n\)*\1$/exe
         \ 'syn match Repeat "^' . escape(getline('.'), '".\^$*[]') . '$"'
-"Perform word count:
+
+"Perform word count {{{2
 command! WordCount
     \ echo WordCount() . " Words in document"
 
