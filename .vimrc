@@ -156,7 +156,7 @@ command! ShowDupes
 "Perform word count:
 command! WordCount
     \ echo WordCount() . " Words in document"
- 
+
 " Functions {{{1
 "Adds word count functionality to vim:
 function! WordCount() "{{{2
