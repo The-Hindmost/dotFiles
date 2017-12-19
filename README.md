@@ -149,6 +149,9 @@ The following settings are enabled for tmux:
 ### Autocmds
 The following autocmds are set for the various filetypes / options
 
+#### New files
+* new perl files (.pl) will be created using a skeleton file defined in `~/.vim/skeleton.pl`
+
 #### NERDTree
 * vim will automatically exit if NERDTree is the only open buffer.
 
