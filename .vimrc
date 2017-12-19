@@ -138,6 +138,9 @@ vnoremap / /\v
 autocmd BufWinEnter * silent loadview
 autocmd BufWinLeave * mkview
 
+" New file settings {{{2
+autocmd BufNewFile *.pl 0r ~/.vim/skeleton.pl
+
 " Nerdtree settings {{{2
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
