@@ -72,7 +72,6 @@ set backspace=indent,eol,start          "Fixes backspacing in Vim on Windows 7
 set completeopt=menu,menuone,preview    "Set completion options
 set cursorline                          "Highlight the current line
 set infercase                           "Infer the correct case to use
-set paste                               "Set paste mode for insert
 setlocal spell spelllang=en_gb          "Enable spell checking
 syntax on                               "Set syntax highlighting on
 
