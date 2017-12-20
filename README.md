@@ -159,6 +159,7 @@ The following autocmds are set for the various filetypes / options
 * The compiler will automatically be set to perl for use with `:make`
 * The error format will be set to `%f:%l:%m`
 * The file in the active buffer will be automatically saved upon invocation of `:make`
+* Perltidy will be run automatically when a perl file is saved
 
 ### Keybindings
 The following key sequences have been mapped
