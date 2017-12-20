@@ -150,6 +150,12 @@ autocmd FileType perl set errorformat=%f:%l:%m
 autocmd FileType perl set autowrite
 
 " Key remaps {{{1
+nnoremap <leader><down><down> :tabclose<cr>
+nnoremap <leader><left> :tableft<cr>
+nnoremap <leader><left><left> :tabfirst<cr>
+nnoremap <leader><right> :tabright<cr>
+nnoremap <leader><right><right> :tablast<cr>
+nnoremap <leader><up><up> :tabnew<cr>
 nnoremap <leader>m :make<cr>
 
 " Commands {{{1
