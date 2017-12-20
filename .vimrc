@@ -135,19 +135,23 @@ nnoremap / /\v
 vnoremap / /\v
 
 " Autocmd Preferences {{{1
-autocmd BufWinEnter * silent loadview
-autocmd BufWinLeave * mkview
+" BufEnter {{{2
+autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
-" New file settings {{{2
+" BufNewFile {{{2
 autocmd BufNewFile *.pl 0r ~/.vim/skeleton.pl
+
+" BufWinEnter {{{2
+autocmd BufWinEnter * silent loadview
+
+" BufWinLeave {{{2
+autocmd BufWinLeave * mkview
 
 " BufWrite {{{2
 autocmd BufWrite *.pl %!perltidy
 
-" Nerdtree settings {{{2
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-
-" Perl filetype settings {{{2
+" FileType {{{2
+" Perl {{{3
 autocmd FileType perl compiler perl
 autocmd FileType perl set errorformat=%f:%l:%m
 autocmd FileType perl set autowrite
