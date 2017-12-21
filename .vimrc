@@ -158,9 +158,9 @@ autocmd FileType perl set autowrite
 
 " Key remaps {{{1
 nnoremap <leader><down><down> :tabclose<cr>
-nnoremap <leader><left> :tableft<cr>
+nnoremap <leader><left> :tabprev<cr>
 nnoremap <leader><left><left> :tabfirst<cr>
-nnoremap <leader><right> :tabright<cr>
+nnoremap <leader><right> :tabnext<cr>
 nnoremap <leader><right><right> :tablast<cr>
 nnoremap <leader><up><up> :tabnew<cr>
 nnoremap <leader>m :make<cr>
