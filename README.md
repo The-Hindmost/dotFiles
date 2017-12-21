@@ -170,9 +170,9 @@ The following key sequences have been mapped
 | ------------------------ | ----------- |
 | `<leader><down><down>`   | `:tabclose` |
 | `<leader><left><left>`   | `:tabfirst` |
-| `<leader><left>`         | `:tableft`  |
+| `<leader><left>`         | `:tabprev`  |
 | `<leader><right><right>` | `:tablast`  |
-| `<leader><right>`        | `:tabright` |
+| `<leader><right>`        | `:tabnext`  |
 | `<leader><up><up>`       | `:tabnew`   |
 | `<leader>m`              | `:make`     |
 
