@@ -193,7 +193,6 @@ The following plugins for vim are installed and maintained by Vundle:
 * [NERDTree](https://github.com/scrooloose/nerdtree)
 * [Vundle](https://github.com/VundleVim/Vundle.vim)
 * [perldoc.vim](https://github.com/hotchpotch/perldoc-vim)
-* [VimCompletesMe](https://github.com/ajh17/vimcompletesme)
 * [vim-latex](https://github.com/vim-latex/vim-latex)
   * Note: vim-latex is set to produce output in pdf format by default
 * [vim-monokai-phoenix](https://github.com/Reewr/vim-monokai-phoenix) theme
