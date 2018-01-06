@@ -1,4 +1,6 @@
+*.swp
 .git/
+LICENSE
 README.md
 exclude_me.txt
 setup.sh

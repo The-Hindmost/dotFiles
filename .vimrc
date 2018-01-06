@@ -13,6 +13,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'Reewr/vim-monokai-phoenix'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'ajh17/vimcompletesme'
+Plugin 'hotchpotch/perldoc-vim'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
@@ -48,6 +50,12 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 " }}}
+" Nerd Tree {{{2
+let g:NERDTreeShowHidden = 1
+" }}}
+" vim-latex {{{2
+let g:Tex_DefaultTargetFormat = 'pdf'
+" }}}
 
 " Rainbow Parentheses {{{2
 au VimEnter * RainbowParenthesesToggle
@@ -58,12 +66,12 @@ au Syntax * RainbowParenthesesLoadSquare
 " }}}
 
 " Editing Preferences {{{1
+au BufLeave * silent! wa                "Save named writable files on leaving a buffer
 au FocusLost * silent! wa               "Save named writable files on lost focus
 set backspace=indent,eol,start          "Fixes backspacing in Vim on Windows 7
 set completeopt=menu,menuone,preview    "Set completion options
 set cursorline                          "Highlight the current line
 set infercase                           "Infer the correct case to use
-set paste                               "Set paste mode for insert
 setlocal spell spelllang=en_gb          "Enable spell checking
 syntax on                               "Set syntax highlighting on
 
@@ -126,22 +134,55 @@ set smartcase                           "Make case sensitive searches smart
 nnoremap / /\v
 vnoremap / /\v
 
+" Autocmd Preferences {{{1
+" BufEnter {{{2
+autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" BufNewFile {{{2
+autocmd BufNewFile *.pl 0r ~/.vim/skeleton.pl
+
+" BufWinEnter {{{2
+autocmd BufWinEnter * silent loadview
+
+" BufWinLeave {{{2
+autocmd BufWinLeave * mkview
+
+" BufWrite {{{2
+autocmd BufWrite *.pl %!perltidy
+
+" FileType {{{2
+" Perl {{{3
+autocmd FileType perl compiler perl
+autocmd FileType perl set errorformat=%f:%l:%m
+autocmd FileType perl set autowrite
+
+" Key remaps {{{1
+nnoremap <leader><down><down> :tabclose<cr>
+nnoremap <leader><left> :tabprev<cr>
+nnoremap <leader><left><left> :tabfirst<cr>
+nnoremap <leader><right> :tabnext<cr>
+nnoremap <leader><right><right> :tablast<cr>
+nnoremap <leader><up><up> :tabnew<cr>
+nnoremap <leader>m :make<cr>
+
 " Commands {{{1
-"Stop highlighting duplicate lines:
+"Stop highlighting duplicate lines {{{2
 command! HideDupes
     \ noh |
     \ syntax off |
     \ syntax on
-"Highlight duplicate lines:
+
+"Highlight duplicate lines {{{2
 command! ShowDupes
     \ noh |
     \ syn clear Repeat |
     \ g/^\(.*\)\n\ze\%(.*\n\)*\1$/exe
         \ 'syn match Repeat "^' . escape(getline('.'), '".\^$*[]') . '$"'
-"Perform word count:
+
+"Perform word count {{{2
 command! WordCount
     \ echo WordCount() . " Words in document"
- 
+
 " Functions {{{1
 "Adds word count functionality to vim:
 function! WordCount() "{{{2
