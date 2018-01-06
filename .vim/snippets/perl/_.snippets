@@ -1,0 +1,53 @@
+# Function
+snippet sub
+    sub ${1:function_name}
+    {
+        ${0}
+    }
+# Conditional
+snippet if
+    if(${1})
+    {
+        ${0}
+    }
+# Conditional if..else
+snippet ife
+    if(${1})
+    {
+        ${2}
+    }
+    else
+    {
+        ${0}
+    }
+# Conditional if..elsif..else
+snippet ifee
+    if(${1})
+    {
+        ${2}
+    }
+    elsif(${3})
+    {
+        ${4:# elsif...}
+    }
+    else
+    {
+        ${0}
+    }
+snippet eif
+    elsif(${1})
+    {
+        ${0}
+    }
+# While Loop
+snippet while
+    while(${1})
+    {
+        ${0}
+    }
+# Foreach Loop
+snippet foreach
+    foreach my $${1:x} (@${2:array})
+    {
+        ${0}
+    }
