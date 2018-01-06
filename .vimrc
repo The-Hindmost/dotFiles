@@ -11,13 +11,15 @@ call vundle#begin()
 "Let Vundle manage Vundle (required)
 Plugin 'VundleVim/Vundle.vim'
 
+Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'Reewr/vim-monokai-phoenix'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'ajh17/vimcompletesme'
+Plugin 'garbas/vim-snipmate'
 Plugin 'hotchpotch/perldoc-vim'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tomtom/tlib_vim'
 Plugin 'vim-latex/vim-latex'
 "}}}
 call vundle#end()
