@@ -13,7 +13,6 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'Reewr/vim-monokai-phoenix'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'ajh17/vimcompletesme'
 Plugin 'hotchpotch/perldoc-vim'
 Plugin 'kien/rainbow_parentheses.vim'
 Plugin 'scrooloose/nerdcommenter'
