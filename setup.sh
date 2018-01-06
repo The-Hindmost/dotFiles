@@ -11,7 +11,7 @@ function doIt() #{{{2
     vim +PluginUpdate +qall
     git config --global core.excludesfile ~/.gitignore
 
-    source .bashrc
+    echo "Now restart terminal, or source ~/.bashrc"
 }
 
 # Main {{{1
