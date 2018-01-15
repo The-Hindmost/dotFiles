@@ -191,6 +191,7 @@ The following snippets are defined for use with tab completion:
 #### Global
 
 | Snippet    | Result                                                          |
+| ---------- | --------------------------------------------------------------- |
 | `date`     | Inserts the current date in YYYY-MM-DD format                   |
 | `time`     | Inserts the current time in HH:MM:SS format                     |
 | `datetime` | Inserts the current date and time in YYYY-MM-DD@HH:MM:SS format |
@@ -198,6 +199,7 @@ The following snippets are defined for use with tab completion:
 #### Perl
 
 | Snippet    | Result                                                 |
+| ---------- | ------------------------------------------------------ |
 | `eif`      | Inserts a template for a new elsif conditional         |
 | `foreach`  | Inserts a template for a new foreach loop              |
 | `if`       | Inserts a template for a new if conditional            |
