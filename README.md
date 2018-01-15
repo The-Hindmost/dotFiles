@@ -185,6 +185,27 @@ The following commands have been added to vim:
 | `ShowDupes` | Highlight duplicate lines in the active buffer         |
 | `WordCount` | Count the amount of words in the active buffer         |
 
+### Snippets
+The following snippets are defined for use with tab completion:
+
+#### Global
+
+| Snippet    | Result                                                          |
+| `date`     | Inserts the current date in YYYY-MM-DD format                   |
+| `time`     | Inserts the current time in HH:MM:SS format                     |
+| `datetime` | Inserts the current date and time in YYYY-MM-DD@HH:MM:SS format |
+
+#### Perl
+
+| Snippet    | Result                                                 |
+| `eif`      | Inserts a template for a new elsif conditional         |
+| `foreach`  | Inserts a template for a new foreach loop              |
+| `if`       | Inserts a template for a new if conditional            |
+| `ife`      | Inserts a template for a new if-else conditional       |
+| `ifee`     | Inserts a template for a new if-elsif-else conditional |
+| `sub`      | Inserts a template for a new subroutine                |
+| `while`    | Inserts a template for a new while loop                |
+
 ### Plugins
 The following plugins for vim are installed and maintained by Vundle:
 * [Better Rainbow Parentheses](https://github.com/kien/rainbow_parentheses.vim)
