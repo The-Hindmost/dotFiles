@@ -1,7 +1,7 @@
 # dotFiles
 A collection of various configuration files that I tend to use for my environment.
 
-This version is v2018.1
+This version is v2018.2
 
 ## Currently supported files
 * bash
@@ -185,6 +185,29 @@ The following commands have been added to vim:
 | `ShowDupes` | Highlight duplicate lines in the active buffer         |
 | `WordCount` | Count the amount of words in the active buffer         |
 
+### Snippets
+The following snippets are defined for use with tab completion:
+
+#### Global
+
+| Snippet    | Result                                                          |
+| ---------- | --------------------------------------------------------------- |
+| `date`     | Inserts the current date in YYYY-MM-DD format                   |
+| `time`     | Inserts the current time in HH:MM:SS format                     |
+| `datetime` | Inserts the current date and time in YYYY-MM-DD@HH:MM:SS format |
+
+#### Perl
+
+| Snippet    | Result                                                 |
+| ---------- | ------------------------------------------------------ |
+| `eif`      | Inserts a template for a new elsif conditional         |
+| `foreach`  | Inserts a template for a new foreach loop              |
+| `if`       | Inserts a template for a new if conditional            |
+| `ife`      | Inserts a template for a new if-else conditional       |
+| `ifee`     | Inserts a template for a new if-elsif-else conditional |
+| `sub`      | Inserts a template for a new subroutine                |
+| `while`    | Inserts a template for a new while loop                |
+
 ### Plugins
 The following plugins for vim are installed and maintained by Vundle:
 * [Better Rainbow Parentheses](https://github.com/kien/rainbow_parentheses.vim)
@@ -193,7 +216,9 @@ The following plugins for vim are installed and maintained by Vundle:
 * [NERDTree](https://github.com/scrooloose/nerdtree)
 * [Vundle](https://github.com/VundleVim/Vundle.vim)
 * [perldoc.vim](https://github.com/hotchpotch/perldoc-vim)
-* [VimCompletesMe](https://github.com/ajh17/vimcompletesme)
+* [tlib_vim](https://github.com/tomtom/tlib_vim)
+* [vim-addon-mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils)
 * [vim-latex](https://github.com/vim-latex/vim-latex)
   * Note: vim-latex is set to produce output in pdf format by default
 * [vim-monokai-phoenix](https://github.com/Reewr/vim-monokai-phoenix) theme
+* [vim-snipmate](https://github.com/garbas/vim-snipmate)

@@ -8,9 +8,10 @@ function doIt() #{{{2
 
 	rsync --exclude-from "exclude_me.txt" -avh --no-perms . ~;
     vim +BundleInstall +qall
+    vim +PluginUpdate +qall
     git config --global core.excludesfile ~/.gitignore
 
-    source .bashrc
+    echo "Now restart terminal, or source ~/.bashrc"
 }
 
 # Main {{{1
