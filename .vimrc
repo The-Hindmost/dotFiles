@@ -61,10 +61,10 @@ let g:Tex_DefaultTargetFormat = 'pdf'
 
 " Rainbow Parentheses {{{2
 au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadBraces
-au Syntax * RainbowParenthesesLoadChevrons
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
+au VimEnter * RainbowParenthesesLoadBraces
+au VimEnter * RainbowParenthesesLoadChevrons
+au VimEnter * RainbowParenthesesLoadRound
+au VimEnter * RainbowParenthesesLoadSquare
 " }}}
 
 " Editing Preferences {{{1
@@ -167,6 +167,7 @@ nnoremap <leader><right> :tabnext<cr>
 nnoremap <leader><right><right> :tablast<cr>
 nnoremap <leader><up><up> :tabnew<cr>
 nnoremap <leader>m :make<cr>
+nnoremap <leader>rp :RainbowParenthesesToggle<cr>
 
 " Commands {{{1
 "Stop highlighting duplicate lines {{{2
