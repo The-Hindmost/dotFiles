@@ -156,10 +156,11 @@ The following autocmds are set for the various filetypes / options
 * vim will automatically exit if NERDTree is the only open buffer.
 
 #### Perl files
-* The compiler will automatically be set to perl for use with `:make`
-* The error format will be set to `%f:%l:%m`
-* The file in the active buffer will be automatically saved upon invocation of `:make`
 * Perltidy will be run automatically when a perl file is saved
+* The compiler will automatically be set to perl for use with `:make`
+* The error format for make will be set to `%f:%l:%m`
+* The file in the active buffer will be automatically saved upon invocation of `:make`
+* Typing `;;` will insert a semicolon and a new line
 
 ### Keybindings
 The following key sequences have been mapped
