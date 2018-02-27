@@ -157,6 +157,7 @@ autocmd BufWrite *.pl %!perltidy
 autocmd FileType perl compiler perl
 autocmd FileType perl set errorformat=%f:%l:%m
 autocmd FileType perl set autowrite
+autocmd FileType perl inoremap ;; ;<cr>
 
 " Key remaps {{{1
 nnoremap <leader><down><down> :tabclose<cr>
