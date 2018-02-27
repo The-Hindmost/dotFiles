@@ -61,10 +61,10 @@ let g:Tex_DefaultTargetFormat = 'pdf'
 
 " Rainbow Parentheses {{{2
 au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadBraces
-au Syntax * RainbowParenthesesLoadChevrons
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
+au VimEnter * RainbowParenthesesLoadBraces
+au VimEnter * RainbowParenthesesLoadChevrons
+au VimEnter * RainbowParenthesesLoadRound
+au VimEnter * RainbowParenthesesLoadSquare
 " }}}
 
 " Editing Preferences {{{1
