@@ -167,6 +167,7 @@ nnoremap <leader><right> :tabnext<cr>
 nnoremap <leader><right><right> :tablast<cr>
 nnoremap <leader><up><up> :tabnew<cr>
 nnoremap <leader>m :make<cr>
+nnoremap <leader>rp :RainbowParenthesesToggle<cr>
 
 " Commands {{{1
 "Stop highlighting duplicate lines {{{2
