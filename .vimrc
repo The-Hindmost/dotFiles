@@ -174,6 +174,7 @@ nnoremap <leader><left><left> :tabfirst<cr>
 nnoremap <leader><right> :tabnext<cr>
 nnoremap <leader><right><right> :tablast<cr>
 nnoremap <leader><up><up> :tabnew<cr>
+nnoremap <leader>\ :noh<cr>
 nnoremap <leader>m :make<cr>
 nnoremap <leader>rp :RainbowParenthesesToggle<cr>
 
