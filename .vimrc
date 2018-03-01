@@ -73,7 +73,7 @@ au VimEnter * RainbowParenthesesLoadChevrons
 au VimEnter * RainbowParenthesesLoadRound
 au VimEnter * RainbowParenthesesLoadSquare
 " }}}
-
+"}}}
 " Editing Preferences {{{1
 au BufLeave * silent! wa                "Save named writable files on leaving a buffer
 au FocusLost * silent! wa               "Save named writable files on lost focus
@@ -162,9 +162,10 @@ autocmd BufWrite *.pl %!perltidy
 " FileType {{{2
 " Perl {{{3
 autocmd FileType perl compiler perl
-autocmd FileType perl set errorformat=%f:%l:%m
-autocmd FileType perl set autowrite
 autocmd FileType perl inoremap ;; ;<cr>
+autocmd FileType perl let g:ale_sign_column_always = 1
+autocmd FileType perl set autowrite
+autocmd FileType perl set errorformat=%f:%l:%m
 
 " Key remaps {{{1
 nnoremap <leader><down><down> :tabclose<cr>
