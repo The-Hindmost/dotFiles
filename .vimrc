@@ -145,27 +145,27 @@ vnoremap / /\v
 
 " Autocmd Preferences {{{1
 " BufEnter {{{2
-autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+au BufEnter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " BufNewFile {{{2
-autocmd BufNewFile *.pl 0r ~/.vim/skeleton.pl
+au BufNewFile *.pl 0r ~/.vim/skeleton.pl
 
 " BufWinEnter {{{2
-autocmd BufWinEnter * silent loadview
+au BufWinEnter * silent loadview
 
 " BufWinLeave {{{2
-autocmd BufWinLeave * mkview
+au BufWinLeave * mkview
 
 " BufWrite {{{2
-autocmd BufWrite *.pl %!perltidy
+au BufWrite *.pl %!perltidy
 
 " FileType {{{2
 " Perl {{{3
-autocmd FileType perl compiler perl
-autocmd FileType perl inoremap ;; ;<cr>
-autocmd FileType perl let g:ale_sign_column_always = 1
-autocmd FileType perl set autowrite
-autocmd FileType perl set errorformat=%f:%l:%m
+au FileType perl compiler perl
+au FileType perl inoremap ;; ;<cr>
+au FileType perl let g:ale_sign_column_always = 1
+au FileType perl set autowrite
+au FileType perl set errorformat=%f:%l:%m
 
 " Key remaps {{{1
 nnoremap <leader><down><down> :tabclose<cr>
