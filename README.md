@@ -175,6 +175,7 @@ The following key sequences have been mapped
 | `<leader><right><right>` | `:tablast`                  |
 | `<leader><right>`        | `:tabnext`                  |
 | `<leader><up><up>`       | `:tabnew`                   |
+| `<leader>\`              | `:noh`                      |
 | `<leader>m`              | `:make`                     |
 | `<leader>rp`             | `:ToggleRainbowParentheses` |
 
