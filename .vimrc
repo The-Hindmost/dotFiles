@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'Reewr/vim-monokai-phoenix'
+Plugin 'w0rp/ale'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'garbas/vim-snipmate'
 Plugin 'hotchpotch/perldoc-vim'
@@ -38,6 +39,13 @@ set wildmenu                            "Enable command completion
 set wildmode=longest:full,full          "Set parameters for wildmenu
 
 " Plugin Preferences {{{1
+" Ale {{{2
+let g:ale_lint_on_enter = 1
+let g:ale_lint_on_filetype_changed = 1
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 1
+let g:ale_perl_options = '-c -Mwarnings -Ilib -It/lib'
+let g:ale_perl_perlcritic_showrules = 1
 " Nerd Commenter {{{2
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
@@ -58,7 +66,6 @@ let g:NERDTreeShowHidden = 1
 " vim-latex {{{2
 let g:Tex_DefaultTargetFormat = 'pdf'
 " }}}
-
 " Rainbow Parentheses {{{2
 au VimEnter * RainbowParenthesesToggle
 au VimEnter * RainbowParenthesesLoadBraces

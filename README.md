@@ -212,6 +212,7 @@ The following snippets are defined for use with tab completion:
 
 ### Plugins
 The following plugins for vim are installed and maintained by Vundle:
+* [Asynchronous Lint Engine (Ale)](https://github.com/w0rp/ale)
 * [Better Rainbow Parentheses](https://github.com/kien/rainbow_parentheses.vim)
 * [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
 * [NERDTree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)
