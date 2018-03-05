@@ -166,7 +166,10 @@ au FileType perl inoremap ;; ;<cr>
 au FileType perl let g:ale_sign_column_always = 1
 au FileType perl set autowrite
 au FileType perl set errorformat=%f:%l:%m
-
+"}}}
+" YAML {{{3
+au FileType yaml let g:ale_sign_column_always = 1
+"}}}
 " Key remaps {{{1
 nnoremap <leader><down><down> :tabclose<cr>
 nnoremap <leader><left> :tabprev<cr>
