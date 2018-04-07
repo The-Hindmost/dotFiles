@@ -1,7 +1,7 @@
 # dotFiles
 A collection of various configuration files that I tend to use for my environment.
 
-This version is v2018.3
+This version is v2018.4
 
 ## Currently supported files
 * bash
@@ -167,15 +167,17 @@ The following key sequences have been mapped
 
 #### Normal Mode
 
-| Key-Binding              | Command     |
-| ------------------------ | ----------- |
-| `<leader><down><down>`   | `:tabclose` |
-| `<leader><left><left>`   | `:tabfirst` |
-| `<leader><left>`         | `:tabprev`  |
-| `<leader><right><right>` | `:tablast`  |
-| `<leader><right>`        | `:tabnext`  |
-| `<leader><up><up>`       | `:tabnew`   |
-| `<leader>m`              | `:make`     |
+| Key-Binding              | Command                     |
+| ------------------------ | --------------------------- |
+| `<leader><down><down>`   | `:tabclose`                 |
+| `<leader><left><left>`   | `:tabfirst`                 |
+| `<leader><left>`         | `:tabprev`                  |
+| `<leader><right><right>` | `:tablast`                  |
+| `<leader><right>`        | `:tabnext`                  |
+| `<leader><up><up>`       | `:tabnew`                   |
+| `<leader>\`              | `:noh`                      |
+| `<leader>m`              | `:make`                     |
+| `<leader>rp`             | `:ToggleRainbowParentheses` |
 
 ### Commands
 The following commands have been added to vim:
@@ -211,6 +213,7 @@ The following snippets are defined for use with tab completion:
 
 ### Plugins
 The following plugins for vim are installed and maintained by Vundle:
+* [Asynchronous Lint Engine (Ale)](https://github.com/w0rp/ale)
 * [Better Rainbow Parentheses](https://github.com/kien/rainbow_parentheses.vim)
 * [NERDCommenter](https://github.com/scrooloose/nerdcommenter)
 * [NERDTree-git-plugin](https://github.com/Xuyuanp/nerdtree-git-plugin)

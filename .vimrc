@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'Reewr/vim-monokai-phoenix'
+Plugin 'w0rp/ale'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'garbas/vim-snipmate'
 Plugin 'hotchpotch/perldoc-vim'
@@ -38,6 +39,13 @@ set wildmenu                            "Enable command completion
 set wildmode=longest:full,full          "Set parameters for wildmenu
 
 " Plugin Preferences {{{1
+" Ale {{{2
+let g:ale_lint_on_enter = 1
+let g:ale_lint_on_filetype_changed = 1
+let g:ale_lint_on_save = 1
+let g:ale_lint_on_text_changed = 1
+let g:ale_perl_options = '-c -Mwarnings -Ilib -It/lib'
+let g:ale_perl_perlcritic_showrules = 1
 " Nerd Commenter {{{2
 let g:NERDTreeIndicatorMapCustom = {
     \ "Modified"  : "✹",
@@ -58,15 +66,14 @@ let g:NERDTreeShowHidden = 1
 " vim-latex {{{2
 let g:Tex_DefaultTargetFormat = 'pdf'
 " }}}
-
 " Rainbow Parentheses {{{2
 au VimEnter * RainbowParenthesesToggle
-au Syntax * RainbowParenthesesLoadBraces
-au Syntax * RainbowParenthesesLoadChevrons
-au Syntax * RainbowParenthesesLoadRound
-au Syntax * RainbowParenthesesLoadSquare
+au VimEnter * RainbowParenthesesLoadBraces
+au VimEnter * RainbowParenthesesLoadChevrons
+au VimEnter * RainbowParenthesesLoadRound
+au VimEnter * RainbowParenthesesLoadSquare
 " }}}
-
+"}}}
 " Editing Preferences {{{1
 au BufLeave * silent! wa                "Save named writable files on leaving a buffer
 au FocusLost * silent! wa               "Save named writable files on lost focus
@@ -138,27 +145,32 @@ vnoremap / /\v
 
 " Autocmd Preferences {{{1
 " BufEnter {{{2
-autocmd BufEnter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+au BufEnter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 
 " BufNewFile {{{2
-autocmd BufNewFile *.pl 0r ~/.vim/skeleton.pl
+au BufNewFile *.pl 0r ~/.vim/skeleton.pl
 
 " BufWinEnter {{{2
-autocmd BufWinEnter * silent loadview
+au BufWinEnter * silent loadview
 
 " BufWinLeave {{{2
-autocmd BufWinLeave * mkview
+au BufWinLeave * mkview
 
 " BufWrite {{{2
-autocmd BufWrite *.pl %!perltidy
+au BufWrite *.pl %!perltidy
 
 " FileType {{{2
 " Perl {{{3
-autocmd FileType perl compiler perl
-autocmd FileType perl set errorformat=%f:%l:%m
-autocmd FileType perl set autowrite
-autocmd FileType perl inoremap ;; ;<cr>
-
+au FileType perl compiler perl
+au FileType perl inoremap ;; ;<cr>
+au FileType perl let g:ale_sign_column_always = 1
+au FileType perl set autowrite
+au FileType perl set errorformat=%f:%l:%m
+"}}}
+" YAML {{{3
+au FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+au FileType yaml let g:ale_sign_column_always = 1
+"}}}
 " Key remaps {{{1
 nnoremap <leader><down><down> :tabclose<cr>
 nnoremap <leader><left> :tabprev<cr>
@@ -166,7 +178,9 @@ nnoremap <leader><left><left> :tabfirst<cr>
 nnoremap <leader><right> :tabnext<cr>
 nnoremap <leader><right><right> :tablast<cr>
 nnoremap <leader><up><up> :tabnew<cr>
+nnoremap <leader>\ :noh<cr>
 nnoremap <leader>m :make<cr>
+nnoremap <leader>rp :RainbowParenthesesToggle<cr>
 
 " Commands {{{1
 "Stop highlighting duplicate lines {{{2
