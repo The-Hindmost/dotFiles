@@ -160,6 +160,13 @@ au BufWinLeave * mkview
 au BufWrite *.pl %!perltidy
 
 " FileType {{{2
+" C {{{3
+au FileType c compiler gcc
+au FileType c inoremap ;; ;<cr>
+au FileType c let g:ale_sign_column_always = 1
+au FileType c set autowrite
+au FileType c set errorformat=%f:%l:%m
+"}}}
 " Perl {{{3
 au FileType perl compiler perl
 au FileType perl inoremap ;; ;<cr>
@@ -170,6 +177,7 @@ au FileType perl set errorformat=%f:%l:%m
 " YAML {{{3
 au FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 au FileType yaml let g:ale_sign_column_always = 1
+au FileType yaml set errorformat=%f:%l:%m
 "}}}
 " Key remaps {{{1
 nnoremap <leader><down><down> :tabclose<cr>
