@@ -155,12 +155,23 @@ The following autocmds are set for the various filetypes / options
 #### NERDTree
 * vim will automatically exit if NERDTree is the only open buffer.
 
+#### C files
+* The 'sign column' for ALE will always be displayed
+* The compiler will automatically be set to gcc for use with `:make`
+* The error format for make will be set to `%f:%l:%m`
+* The file in the active buffer will be automatically saved upon invocation of `:make`
+* Typing `;;` will insert a semicolon and a new line
+
 #### Perl files
+* The 'sign column' for ALE will always be displayed
 * Perltidy will be run automatically when a perl file is saved
 * The compiler will automatically be set to perl for use with `:make`
 * The error format for make will be set to `%f:%l:%m`
 * The file in the active buffer will be automatically saved upon invocation of `:make`
 * Typing `;;` will insert a semicolon and a new line
+
+#### YAML Files
+* The 'sign column' for ALE will always be displayed
 
 ### Keybindings
 The following key sequences have been mapped
