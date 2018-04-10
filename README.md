@@ -178,17 +178,18 @@ The following key sequences have been mapped
 
 #### Normal Mode
 
-| Key-Binding              | Command                     |
-| ------------------------ | --------------------------- |
-| `<leader><down><down>`   | `:tabclose`                 |
-| `<leader><left><left>`   | `:tabfirst`                 |
-| `<leader><left>`         | `:tabprev`                  |
-| `<leader><right><right>` | `:tablast`                  |
-| `<leader><right>`        | `:tabnext`                  |
-| `<leader><up><up>`       | `:tabnew`                   |
-| `<leader>\`              | `:noh`                      |
-| `<leader>m`              | `:make`                     |
-| `<leader>rp`             | `:ToggleRainbowParentheses` |
+| Key-Binding              | Command                                             |
+| ------------------------ | --------------------------------------------------- |
+| `<leader><down><down>`   | `:tabclose`                                         |
+| `<leader><left><left>`   | `:tabfirst`                                         |
+| `<leader><left>`         | `:tabprev`                                          |
+| `<leader><right><right>` | `:tablast`                                          |
+| `<leader><right>`        | `:tabnext`                                          |
+| `<leader><up><up>`       | `:tabnew`                                           |
+| `<leader>\`              | `:noh`                                              |
+| `<leader>lc`             | `:set list!` (Toggles whitespace character listing) |
+| `<leader>m`              | `:make`                                             |
+| `<leader>rp`             | `:ToggleRainbowParentheses`                         |
 
 ### Commands
 The following commands have been added to vim:
