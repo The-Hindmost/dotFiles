@@ -83,6 +83,7 @@ set cursorline                          "Highlight the current line
 set infercase                           "Infer the correct case to use
 setlocal spell spelllang=en_gb          "Enable spell checking
 syntax on                               "Set syntax highlighting on
+set listchars=tab:›\ ,eol:¬,trail:⋅     "Set characters for list
 
 " Indent Preferences {{{1
 filetype plugin indent on               "Set indenting style to be based on the filetype
@@ -187,6 +188,7 @@ nnoremap <leader><right> :tabnext<cr>
 nnoremap <leader><right><right> :tablast<cr>
 nnoremap <leader><up><up> :tabnew<cr>
 nnoremap <leader>\ :noh<cr>
+nnoremap <leader>lc :set list!<cr>
 nnoremap <leader>m :make<cr>
 nnoremap <leader>rp :RainbowParenthesesToggle<cr>
 
