@@ -1,7 +1,7 @@
 # dotFiles
 A collection of various configuration files that I tend to use for my environment.
 
-This version is v2018.5.DEVELOPMENT
+This version is v2018.5
 
 ## Currently supported files
 * bash
