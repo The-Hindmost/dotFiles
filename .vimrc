@@ -83,6 +83,7 @@ set cursorline                          "Highlight the current line
 set infercase                           "Infer the correct case to use
 setlocal spell spelllang=en_gb          "Enable spell checking
 syntax on                               "Set syntax highlighting on
+set listchars=tab:›\ ,eol:¬,trail:⋅     "Set characters for list
 
 " Indent Preferences {{{1
 filetype plugin indent on               "Set indenting style to be based on the filetype
@@ -160,6 +161,13 @@ au BufWinLeave * mkview
 au BufWrite *.pl %!perltidy
 
 " FileType {{{2
+" C {{{3
+au FileType c compiler gcc
+au FileType c inoremap ;; ;<cr>
+au FileType c let g:ale_sign_column_always = 1
+au FileType c set autowrite
+au FileType c set errorformat=%f:%l:%m
+"}}}
 " Perl {{{3
 au FileType perl compiler perl
 au FileType perl inoremap ;; ;<cr>
@@ -170,6 +178,7 @@ au FileType perl set errorformat=%f:%l:%m
 " YAML {{{3
 au FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 au FileType yaml let g:ale_sign_column_always = 1
+au FileType yaml set errorformat=%f:%l:%m
 "}}}
 " Key remaps {{{1
 nnoremap <leader><down><down> :tabclose<cr>
@@ -179,6 +188,7 @@ nnoremap <leader><right> :tabnext<cr>
 nnoremap <leader><right><right> :tablast<cr>
 nnoremap <leader><up><up> :tabnew<cr>
 nnoremap <leader>\ :noh<cr>
+nnoremap <leader>lc :set list!<cr>
 nnoremap <leader>m :make<cr>
 nnoremap <leader>rp :RainbowParenthesesToggle<cr>
 

@@ -1,7 +1,7 @@
 # dotFiles
 A collection of various configuration files that I tend to use for my environment.
 
-This version is v2018.4
+This version is v2018.5
 
 ## Currently supported files
 * bash
@@ -155,29 +155,41 @@ The following autocmds are set for the various filetypes / options
 #### NERDTree
 * vim will automatically exit if NERDTree is the only open buffer.
 
+#### C files
+* The 'sign column' for ALE will always be displayed
+* The compiler will automatically be set to gcc for use with `:make`
+* The error format for make will be set to `%f:%l:%m`
+* The file in the active buffer will be automatically saved upon invocation of `:make`
+* Typing `;;` will insert a semicolon and a new line
+
 #### Perl files
+* The 'sign column' for ALE will always be displayed
 * Perltidy will be run automatically when a perl file is saved
 * The compiler will automatically be set to perl for use with `:make`
 * The error format for make will be set to `%f:%l:%m`
 * The file in the active buffer will be automatically saved upon invocation of `:make`
 * Typing `;;` will insert a semicolon and a new line
 
+#### YAML Files
+* The 'sign column' for ALE will always be displayed
+
 ### Keybindings
 The following key sequences have been mapped
 
 #### Normal Mode
 
-| Key-Binding              | Command                     |
-| ------------------------ | --------------------------- |
-| `<leader><down><down>`   | `:tabclose`                 |
-| `<leader><left><left>`   | `:tabfirst`                 |
-| `<leader><left>`         | `:tabprev`                  |
-| `<leader><right><right>` | `:tablast`                  |
-| `<leader><right>`        | `:tabnext`                  |
-| `<leader><up><up>`       | `:tabnew`                   |
-| `<leader>\`              | `:noh`                      |
-| `<leader>m`              | `:make`                     |
-| `<leader>rp`             | `:ToggleRainbowParentheses` |
+| Key-Binding              | Command                                             |
+| ------------------------ | --------------------------------------------------- |
+| `<leader><down><down>`   | `:tabclose`                                         |
+| `<leader><left><left>`   | `:tabfirst`                                         |
+| `<leader><left>`         | `:tabprev`                                          |
+| `<leader><right><right>` | `:tablast`                                          |
+| `<leader><right>`        | `:tabnext`                                          |
+| `<leader><up><up>`       | `:tabnew`                                           |
+| `<leader>\`              | `:noh`                                              |
+| `<leader>lc`             | `:set list!` (Toggles whitespace character listing) |
+| `<leader>m`              | `:make`                                             |
+| `<leader>rp`             | `:ToggleRainbowParentheses`                         |
 
 ### Commands
 The following commands have been added to vim:
