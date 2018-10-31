@@ -185,6 +185,8 @@ exec --no-startup-id mate-power-manager
 exec --no-startup-id mate-volume-control-applet
 exec --no-startup-id nm-applet
 exec --no-startup-id psensor
+exec --no-startup-id rescuetime
+exec --no-startup-id slack
 
 # Configuration options
 workspace_layout tabbed
