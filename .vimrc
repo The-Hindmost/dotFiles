@@ -90,7 +90,6 @@ filetype plugin indent on               "Set indenting style to be based on the 
 set autoindent                          "Enable automatic indenting
 set shiftwidth=4                        "Indent four spaces
 set softtabstop=4                       "Use four spaces for soft tabs
-set tabstop=4                           "Use four spaces for tabs
 set expandtab                           "Convert tabs to spaces
 
 " Layout Preferences {{{1
@@ -176,7 +175,7 @@ au FileType perl set autowrite
 au FileType perl set errorformat=%f:%l:%m
 "}}}
 " YAML {{{3
-au FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+au FileType yaml setlocal sts=2 sw=2 expandtab
 au FileType yaml let g:ale_sign_column_always = 1
 au FileType yaml set errorformat=%f:%l:%m
 "}}}
