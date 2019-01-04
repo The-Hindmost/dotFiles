@@ -187,6 +187,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id psensor
 exec --no-startup-id rescuetime
 exec --no-startup-id slack
+exec --no-startup-id tusk
 
 # Configuration options
 workspace_layout tabbed
