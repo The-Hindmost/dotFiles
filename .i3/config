@@ -137,7 +137,7 @@ bindsym Mod4+Shift+r restart
 bindsym Mod4+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # Take a screenshot
-bindym Print exec gnome-screenshot -i
+bindsym Print exec gnome-screenshot -i
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
