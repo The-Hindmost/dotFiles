@@ -48,6 +48,11 @@ bindsym Mod4+d exec dmenu_run
 # installed.
 # bindsym Mod4+d exec --no-startup-id i3-dmenu-desktop
 
+# Custom keybindings
+bindsym Mod4+F2 exec google-chrome
+bindsym Mod4+F3 exec caja
+bindsym Mod4+F4 exec gvim
+
 # change focus
 bindsym Mod4+$left focus left
 bindsym Mod4+$down focus down
@@ -192,6 +197,7 @@ exec --no-startup-id psensor
 exec --no-startup-id rescuetime
 exec --no-startup-id slack
 exec --no-startup-id tusk
+exec --no-startup-id redshift-gtk
 
 # Configuration options
 workspace_layout tabbed
