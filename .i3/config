@@ -52,6 +52,8 @@ bindsym Mod4+d exec dmenu_run
 bindsym Mod4+F2 exec google-chrome
 bindsym Mod4+F3 exec caja
 bindsym Mod4+F4 exec gvim
+bindsym Mod4+F12 exec --no-startup-id /home/cdykes/.screenlayout/default_layout.sh
+bindsym Mod4+Shift+F12 exec --no-startup-id /home/cdykes/.screenlayout/backup_layout.sh
 
 # change focus
 bindsym Mod4+$left focus left
